@@ -1,0 +1,9 @@
+# Global config import
+@baseUrl = {{$dotenv baseUrl}}
+
+### Auth İstekleri
+@import "./auth.http"
+
+### User İstekleri
+@import "./user.http"
+

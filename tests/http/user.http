@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:3000/api
+# Login isteğinden sonra bu token'ı manuel olarak buraya yapıştırın
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwiaWF0IjoxNzM1MTE0OTg4LCJleHAiOjE3MzUyMDEzODh9.yxG-xkqM0zSpSV1-hvQttgd5rsFcyv7lM7_4dKxmPw8
+
+### Kullanıcı Profili Görüntüleme
+GET {{baseUrl}}/users/profile
+Authorization: Bearer {{authToken}}
+
+### Kullanıcı Profili Güncelleme
+PUT {{baseUrl}}/users/profile
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Updated Name"
+} 

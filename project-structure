@@ -1,0 +1,29 @@
+node-api-project/
+├── src/
+│   ├── config/
+│   │   ├── database.js
+│   │   └── jwt.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── userController.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── validationMiddleware.js
+│   ├── models/
+│   │   └── user.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── userRoutes.js
+│   ├── services/
+│   │   ├── authService.js
+│   │   └── userService.js
+│   ├── validators/
+│   │   └── authValidator.js
+│   └── app.js
+├── tests/
+│   └── http/
+│       ├── auth.http
+│       ├── user.http
+│       └── config.http
+├── .env
+└── package.json 

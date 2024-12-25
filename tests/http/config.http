@@ -1,0 +1,2 @@
+# Global değişkenler için kullanılacak
+@baseUrl = http://localhost:3000/api 
