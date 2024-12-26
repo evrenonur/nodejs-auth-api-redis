@@ -13,6 +13,7 @@ node-api-project/
 │   │   └── user.js
 │   ├── routes/
 │   │   ├── authRoutes.js
+|   |   ├── index.js
 │   │   └── userRoutes.js
 │   ├── services/
 │   │   ├── authService.js
