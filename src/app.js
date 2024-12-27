@@ -2,8 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
-import authRoutes from './routes/authRoutes.js';
-import userRoutes from './routes/userRoutes.js';
+import routes from './routes/index.js';
 import sequelize from './config/database.js';
 
 dotenv.config();
@@ -16,8 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/users', userRoutes);
+app.use('/api', routes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
